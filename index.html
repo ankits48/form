@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">It is used collected data from the group of people and anlaysis data for research purpose</p>
+    <form method="post"id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter Your Name" required></label>
+      <label id="email-label">Email: <input type="email" id="email" placeholder="Enter Your Email" required></label>
+<label id="number-label">Age: <input type="number" placeholder="Enter Your Age" id="number" min="18" max="60"></label>
+      </fieldset>
+      <fieldset>
+        <label>Gender: <select id="dropdown">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option></select></label>
+          <label>What is Your hobbies ?</label>
+          <label><input type="radio" name="hobbies" value="1"> Cricket</label>
+             <label><input type="radio" name="hobbies" value="2"> Hockey</label>
+             <label>What is interests ?</label>
+             <label><input type="checkbox" value="coding"> Coding</label>
+             <label><input type="checkbox" value="music"> Music</label>
+             <label><input type="checkbox" value="dancing"> Dancing</label>
+             <label>Any Comments or Suggestions?</label>
+             <label><textarea  placeholder="comments"></textarea></label>
+      </fieldset>
+      <input id ="submit" type="submit" value="Submit">
+    </form>
+  </body>
+  </html>
